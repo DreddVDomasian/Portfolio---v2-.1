@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="images/icon.ico">
+    
+    <script src="https://kit.fontawesome.com/519e46e20e.js" crossorigin="anonymous"></script>
+    <title>Dredd</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Dredd </span>V. Domasian <br>from Philippines</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/dredd.png">
+                </div>   
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="intro">I'm Dredd Domasian, a college student studying BSIT. 
+                        My life revolves around a few key things: my studies, 
+                        League of Legends, and my love for food. When I'm not buried 
+                        in textbooks or coding, you can usually find me immersed in the 
+                        virtual battles of League of Legends, refining my strategic skills 
+                        and enjoying some quality gaming time. But there's more to me than 
+                        just academics and gaming. I'm a true food enthusiast, always on  
+                        the hunt for new and exciting culinary experiences, from the savory  
+                        delights of street food to the indulgence of fine dining. It's a bit  
+                        of a juggling act, but it keeps my college life exciting and well-rounded.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-current</span><br>UI/UX Design Training at ET Institute.</li>
+                            <li><span>2020-2022</span><br>Team lead at StartApp LLC.</li>
+                            <li><span>2018-2020</span><br>UI/UX Design Executive ar Coin Digital Ltd.</li>
+                            <li><span>2017-2018</span><br>Internship ar ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015</span><br>Sure Foundation School.</li>
+                            <li><span>2020</span><br>Gov. Luis A. Ferrer Senior High School.</li>
+                            <li><span>2021-2025</span><br>Cavite State University Genereal Trias City Campus</li>
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-------------services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 >Web Design</h2>
+                    <p>
+                        My web design services blend creativity and functionality 
+                        to craft visually appealing, user-friendly websites that 
+                        leave a lasting impression.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Software Developer</h2>
+                    <p>
+                        My software development services bring your ideas to life
+                        through code, creating custom applications and software 
+                        systems tailored to your needs.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Computer System Servicing</h2>
+                    <p>
+                        My Computer System Servicing services offer comprehensive 
+                        support for your IT infrastructure. I can handle maintenance, 
+                        repairs, and optimization to ensure your computer systems 
+                        stay reliable and efficient, allowing you to focus on your
+                        work without technology worries.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------------portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>PC Building</h3>
+                        <p>
+                            I specialize in crafting high-performance PCs, tailored to your 
+                            exact needs and preferences. Whether you're a gamer, a content creator, 
+                            or simply seeking a powerful and reliable computer, I build custom PCs that 
+                            maximize performance and efficiency
+                        </p>
+                        <a  href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Digital Arts</h3>
+                        <p>
+                            Through digital arts, I breathe life into ideas, creating visual stories and 
+                            captivating designs that resonate with audiences. From illustrations to animations, 
+                            I'm passionate about translating imagination into compelling digital art
+                        </p>
+                        <a  href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Web Developer</h3>
+                        <p>
+                            As a web developer, I bring your online vision to reality, crafting dynamic and 
+                            user-friendly websites that leave a lasting impression. With expertise in front-end and 
+                            back-end development, I build digital experiences that enhance your online presence.
+                        </p>
+                        <a  href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="additional-work" class="hidden">
+                <div class="work hidden">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>PC Building</h3>
+                        <p>
+                            I specialize in crafting high-performance PCs, tailored to your 
+                            exact needs and preferences. Whether you're a gamer, a content creator, 
+                            or simply seeking a powerful and reliable computer, I build custom PCs that 
+                            maximize performance and efficiency
+                        </p>
+                        <a  href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work hidden">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Digital Arts</h3>
+                        <p>
+                            Through digital arts, I breathe life into ideas, creating visual stories and 
+                            captivating designs that resonate with audiences. From illustrations to animations, 
+                            I'm passionate about translating imagination into compelling digital art
+                        </p>
+                        <a  href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work hidden">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Web Developer</h3>
+                        <p>
+                            As a web developer, I bring your online vision to reality, crafting dynamic and 
+                            user-friendly websites that leave a lasting impression. With expertise in front-end and 
+                            back-end development, I build digital experiences that enhance your online presence.
+                        </p>
+                        <a  href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="see-more-btn" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ---------------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>DomasianDredd@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>09272483891</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Dreddvdomasian"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Thee_SaucrGod"><i class="fa-brands fa-square-x-twitter"></i></i></i></a>
+                        <a href="https://www.instagram.com/dredddomasian/"><i class="fa-brands fa-square-instagram"></i></i></a>
+                        <a href="https://www.linkedin.com/in/dredd-domasian-38385b1b8/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <a id="backToTop" href="#header">
+            <span class="material-symbols-outlined">
+                arrow_upward_alt
+            </span>
+        </a>
+        <div class="copyright">
+            <p>Disclaimer: This portfolio contains simulated data for demonstration purposes and is not representative of real-world information.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
