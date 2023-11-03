@@ -1,4 +1,4 @@
-    // Define the function to switch tabs
+    //about me js
     function opentab(event, tabname) {
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -14,7 +14,7 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
-    // Handle the "See more" button
+    //"See more" button
     document.addEventListener("DOMContentLoaded", function () {
         const seeMoreButton = document.getElementById("see-more-btn");
         const additionalWorkContainer = document.getElementById("additional-work");
@@ -35,12 +35,12 @@
             }
         });
 
-        // Scroll to top button
+        //back to the top button
         const backToTopButton = document.getElementById('backToTop');
         backToTopButton.style.display = 'none';
 
         window.addEventListener('scroll', () => {
-            if (document.documentElement.scrollTop > 1000) {
+            if (document.documentElement.scrollTop > 1500) {
                 backToTopButton.style.display = 'block';
             } else {
                 backToTopButton.style.display = 'none';
@@ -51,7 +51,7 @@
         });
     });
 
-    // Handle the side menu
+    //mobile version nav
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu() {
@@ -62,7 +62,7 @@
         sidemenu.style.right = "-200px";
     }
 
-    // Handle form submission
+    //message js
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwmefDFpUEqBs0HR9uMSUVaClnRvGQg-V851THIr9q8FZltShIDDr2aBheAJd9s11jZYQ/exec';
     const form = document.forms['submit-to-google-sheet'];
     const msg = document.getElementById("msg");
